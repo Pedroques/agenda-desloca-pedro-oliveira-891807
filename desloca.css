@@ -1,0 +1,209 @@
+/* Reset e base */
+html
+{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+body {
+  background-image: url('img/background.jpg');
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #0f365f;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.headerh1 i {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+main {
+  flex:1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.agenda-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.agenda-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0f365f;
+}
+
+.agenda-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+
+.agenda-compromissos,
+.agenda-proximo {
+  flex: 1 1 45%;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+thead {
+  background-color: #0f365f;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Botões */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s, color 0.3s;
+}
+
+/*Botão: + Adicionar Compromisso*/
+.agenda-btn {
+  background-color: #0f365f;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.agenda-btn:hover {
+  background-color: #195391;
+}
+
+/*Botão: Editar*/
+.agenda-edit {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.agenda-edit:hover {
+  background-color: #b2b9e4;
+}
+
+/*Botão: Excluir*/
+.agenda-delete {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.agenda-delete:hover {
+  background-color: #e48e95;
+}
+
+/* Próximo deslocamento */
+.agenda-card {
+  background-color: #f3f1f1;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0, 87, 146, 0.1);
+}
+
+.agenda-card h3 {
+  margin-bottom: 1rem;
+}
+
+.agenda-actions {
+  margin-top: 1rem;
+}
+
+.footer {
+  background-color: #0f365f;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+}
+
+.direitos p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .agenda-content {
+    flex-direction: column;
+  }
+
+  .agenda-compromissos,
+  .agenda-proximo {
+    flex: 1 1 100%;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .agenda-edit,
+  .agenda-delete {
+    margin: 0.2rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .agenda-btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+}
